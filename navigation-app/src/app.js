@@ -6,9 +6,10 @@ export class App {
     this.router = router;
     this.router.configure(config => {
       config.title = 'Aurelia';
-    config.map([
-      { route: ['','welcome'], moduleId: 'welcome', nav: true, title:'Welcome' }
-    ]);
-  });
-}
+      config.map([
+        { route: ['','welcome'],  moduleId: 'welcome',      nav: true, title:'Welcome' },
+        { route: 'flickr',        moduleId: 'flickr',       nav: true }
+      ]);
+    });
+  }
 }
